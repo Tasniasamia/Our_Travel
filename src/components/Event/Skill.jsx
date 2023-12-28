@@ -64,7 +64,7 @@ const Event_agenda = () => {
                     {
                         events.map((item,index)=>{
                             return (
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12" key={index}>
+                                <div className="col-lg-4 col-md-6 col-sm-12 col-12  mt-4" key={index}>
                         <div className="event-agenda-card">
                             <div className="event-agenda-img">
                                 <a href="event-details.html"><img src={item.img} alt="img"/></a>
@@ -79,26 +79,14 @@ const Event_agenda = () => {
                             )
                         })
                     }
-                    {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div className="event-agenda-card">
-                            <div className="event-agenda-img">
-                                <a href="event-details.html"><img src="assets/img/event/aganda-1.png" alt="img"/></a>
-                            </div>
-                            <div className="event-agenda-text">
-                                <h3><a href="event-details.html">Business conference</a></h3>
-                                <p>Anim exercitation qui velit esse amet ex exercitation ullamco fugiat culpa ea duis
-                                    anim. Est velit sint veniam culpa .</p>
-                            </div>
-                        </div>
-                    </div>
-                   */}
+                    
                 </div>
             </div>
         </div>
     </section>
 
                      <div className="row">
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 mb-5">
                         <div className="common-btn event-btn">
                             <button className="btn theme-btn">Load More...</button>
                         </div>

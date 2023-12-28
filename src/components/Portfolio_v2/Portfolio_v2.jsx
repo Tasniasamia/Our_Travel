@@ -1,3 +1,4 @@
+import InstaCarousal from "../Shared/InstaCarousal/InstaCarousal";
 import Banner from "./Banner";
 import Details from "./Details";
 
@@ -6,7 +7,7 @@ const Portfolio_v2 = () => {
         <div>
             <Banner/>
             <Details/>
-            {/* owl-insta-slider */}
+           <InstaCarousal/>
         </div>
     );
 };

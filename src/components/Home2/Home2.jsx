@@ -6,6 +6,7 @@ import Event_info from './Event_info';
 import Ourteam from './Ourteam';
 import Photo_Gallery from './Photo_Gallery';
 import Program_Schedule from './Program_Schedule';
+import Sponsor from './Sponsor';
 import Testimonial from './Testimonial';
 
 const Home2 = () => {
@@ -20,8 +21,8 @@ const Home2 = () => {
             <Ourteam/>
             <Testimonial/>
             <Blog/>
+            <Sponsor/>
 
-            {/* owl-slider */}
         </div>
     );
 };

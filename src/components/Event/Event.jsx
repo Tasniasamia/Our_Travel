@@ -1,3 +1,4 @@
+import InstaCarousal from "../Shared/InstaCarousal/InstaCarousal";
 import Banner from "./Banner";
 import Event_agenda from "./Skill";
 
@@ -6,8 +7,7 @@ const Event = () => {
         <div>
             <Banner/>
             <Event_agenda/>
-            {/* owl-slider-insta */}
-            
+            <InstaCarousal/>            
         </div>
     );
 };
