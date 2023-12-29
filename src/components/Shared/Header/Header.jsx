@@ -134,10 +134,10 @@ const Header = () => {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li className="nav-item">
-                                            <a href="news.html" className="nav-link">News</a>
+                                            <Link to="/news" className="nav-link">News</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="news-list.html" className="nav-link">News list</a>
+                                            <Link to="/news_list" className="nav-link">News list</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a href="news-details.html" className="nav-link">News details</a>

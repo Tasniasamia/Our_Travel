@@ -22,6 +22,8 @@ import Team_Details from './components/Pages/Team_Details/Team_Details';
 import Faq from './components/Pages/FAQ/Faq';
 import Login_Resister from './components/Pages/Login_&_Resister/Login_Resister';
 import Error from './components/Pages/Error/Error';
+import News from './components/News/News';
+import News_List from './components/News_List/News_List';
 
 const router = createBrowserRouter([
   {
@@ -88,6 +90,14 @@ const router = createBrowserRouter([
       {
         path:"/error",
         element:<Error/>
+      },
+      {
+        path:"/news",
+        element:<News/>
+      },
+      {
+        path:"/news_list",
+        element:<News_List/>
       }
     ]
   },
