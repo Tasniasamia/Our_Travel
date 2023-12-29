@@ -23,7 +23,8 @@ import Faq from './components/Pages/FAQ/Faq';
 import Login_Resister from './components/Pages/Login_&_Resister/Login_Resister';
 import Error from './components/Pages/Error/Error';
 import News from './components/News/News';
-import News_List from './components/News_List/News_List';
+import News_List from './components/News_Details/News_List';
+import News_L from './components/News_List/News_L';
 
 const router = createBrowserRouter([
   {
@@ -96,8 +97,13 @@ const router = createBrowserRouter([
         element:<News/>
       },
       {
-        path:"/news_list",
+        path:"/news_details",
         element:<News_List/>
+      },
+      {
+        path:"/news_list",
+        element:<News_L/>
+
       }
     ]
   },

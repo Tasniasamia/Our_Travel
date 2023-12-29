@@ -8,11 +8,11 @@ const Banner = () => {
             <div className="row">
                 <div className="col-lg-12">
                     <div className="common-banner-page text-center">
-                        <h2>New List</h2>
+                        <h2>New details</h2>
                         <ul className="common-banner-page-link">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/">/</Link></li>
-                            <li className="active-page">News List</li>
+                            <li className="active-page">News details</li>
                         </ul>
                     </div>
                 </div>
