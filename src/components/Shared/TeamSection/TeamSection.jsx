@@ -159,6 +159,13 @@ const TeamSection = () => {
             </div>
         </div>
     </section>
+    <div className='row mb-5'>
+    <div className="col-lg-12">
+                <div className="common-btn">
+                    <button className="btn theme-btn">View All</button>
+                </div>
+            </div>
+    </div>
         </div>
     );
 };

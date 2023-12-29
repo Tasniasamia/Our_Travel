@@ -14,6 +14,38 @@ const InstaCarousal = () => {
         items: 5,
         nav: true,
       };
+const images=[
+    {
+        img:img1
+    },
+    {
+        img:img2
+    },
+    {
+        img:img3
+    },
+    {
+        img:img4
+    },
+    {
+        img:img5
+    },
+    {
+        img:img1
+    },
+    {
+        img:img2
+    },
+    {
+        img:img3
+    },
+    {
+        img:img4
+    },
+    {
+        img:img5
+    },
+]
     return (
         <div>
                <section id="instgram-area">
@@ -21,36 +53,20 @@ const InstaCarousal = () => {
             <div className="row">
                 <div className="col-lg-12">
                 <OwlCarousel className="owl-theme" {...options}>
-                        <div className="instagram-item">
-                            <a href="#!">
-                                <i className="fab fa-instagram"></i>
-                            <img src={img1} alt="img"/>
-                            </a>
-                        </div>
-                        <div className="instagram-item">
-                            <a href="#!">
-                                <i className="fab fa-instagram"></i>
-                                <img src={img2} alt="img"/>
-                            </a>
-                        </div>
-                        <div className="instagram-item">
-                            <a href="#!">
-                                <i className="fab fa-instagram"></i>
-                                <img src={img3} alt="img"/>
-                            </a>
-                        </div>
-                        <div className="instagram-item">
-                            <a href="#!">
-                                <i className="fab fa-instagram"></i>
-                                <img src={img4} alt="img"/>
-                            </a>
-                        </div>
-                        <div className="instagram-item">
-                            <a href="#!">
-                                <i className="fab fa-instagram"></i>
-                                <img src={img5} alt="img"/>
-                            </a>
-                        </div>
+                    {
+                        images.map((item,index)=>{
+                            return (
+                                <div className="instagram-item"key={index}>
+                                <a href="#!">
+                                    <i className="fab fa-instagram"></i>
+                                <img src={item.img} alt="img"/>
+                                </a>
+                            </div>
+                            )
+                         
+                        })
+                    }
+                    
                     </OwlCarousel>
                 </div>
             </div>

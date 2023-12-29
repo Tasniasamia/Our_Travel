@@ -1,6 +1,6 @@
 import InstaCarousal from "../Shared/InstaCarousal/InstaCarousal";
 import Banner from "./Banner";
-import Event_agenda from "./Skill";
+import Event_agenda from "../Shared/Services";
 
 const Event = () => {
     return (

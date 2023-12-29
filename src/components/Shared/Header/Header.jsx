@@ -102,28 +102,28 @@ const Header = () => {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li className="nav-item">
-                                            <a href="gallery.html" className="nav-link">Gallery</a>
+                                            <Link to="/gallery" className="nav-link">Gallery</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="service.html" className="nav-link">Service</a>
+                                            <Link to="/Services" className="nav-link">Service</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="service-details.html" className="nav-link">Service details</a>
+                                            <Link to="/services_details" className="nav-link">Service details</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="team.html" className="nav-link">Team</a>
+                                            <Link to="/Team" className="nav-link">Team</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="team-details.html" className="nav-link">Team details</a>
+                                            <Link to="/team_details" className="nav-link">Team details</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="faq.html" className="nav-link">Faq</a>
+                                            <Link to="/Faq" className="nav-link">Faq</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="login.html" className="nav-link">Login & Registration</a>
+                                            <Link to="/login" className="nav-link">Login & Registration</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="error.html" className="nav-link">Error</a>
+                                            <Link to="/error" className="nav-link">Error</Link>
                                         </li>
                                     </ul>
                                 </li>
