@@ -25,6 +25,7 @@ import Error from './components/Pages/Error/Error';
 import News from './components/News/News';
 import News_List from './components/News_Details/News_List';
 import News_L from './components/News_List/News_L';
+import Contact from './components/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -104,6 +105,10 @@ const router = createBrowserRouter([
         path:"/news_list",
         element:<News_L/>
 
+      },
+      {
+        path:"/contact",
+        element:<Contact/>
       }
     ]
   },

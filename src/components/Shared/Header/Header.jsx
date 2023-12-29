@@ -145,7 +145,7 @@ const Header = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="contact.html" className="nav-link">Contact</a>
+                                    <Link to="/contact" className="nav-link">Contact</Link>
                                 </li>
                             </ul>
                             <div className="others-options d-flex align-items-center">
