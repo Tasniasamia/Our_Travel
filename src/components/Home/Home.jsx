@@ -23,6 +23,7 @@ const Home = () => {
             <Sponsor/>
             <Owl_Carosual/>
             <InstaCarousal/>
+   
         </div>
     );
 };

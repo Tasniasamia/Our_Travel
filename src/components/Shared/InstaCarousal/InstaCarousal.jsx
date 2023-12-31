@@ -9,7 +9,7 @@ import img4 from '../../../assets/img/instagram/instagram-4.png';
 import img5 from '../../../assets/img/instagram/instagram-5.png';
 
 const InstaCarousal = () => {
-    const options = {
+const options = {
         loop: true,
         items: 5,
         nav: true,
@@ -29,22 +29,7 @@ const images=[
     },
     {
         img:img5
-    },
-    {
-        img:img1
-    },
-    {
-        img:img2
-    },
-    {
-        img:img3
-    },
-    {
-        img:img4
-    },
-    {
-        img:img5
-    },
+    }
 ]
     return (
         <div>

@@ -1,3 +1,4 @@
+"use client";
 import './Header.css';
 import '../../../assets/style.css'
 import img1 from "../../../assets/img/navbar-logo.png";
@@ -20,10 +21,21 @@ import icon2 from "../../../assets/img/icon/twiter-foot.png"
 import icon3 from "../../../assets/img/icon/instagram-foot.png"
 import icon4 from "../../../assets/img/icon/linkedin-foot.png";
 import { Link } from 'react-router-dom';
+
+import './Header.css';
+import { useState } from 'react';
+
 const Header = () => {
+    const [condition,setCondition]=useState(false);
+    const[home,setHome]=useState(false);
+    const [event,setEvents]=useState(false);
+    const [portfolio,setPortfolio]=useState(false);
+    const[page,setPage]=useState(false);
+    const[news,setNews]=useState(false)
     return (
         <div>
-              <header className="main-header-arae">
+            
+              <header className="main-header-arae d-md-block d-none">
         <div className="navbar-area">
             <div className="main-responsive-nav">
                 <div className="container">
@@ -247,6 +259,70 @@ const Header = () => {
             </div>
         </div>
     </div>
+    {/* <!-- Simulate a smartphone / tablet --> */}
+<div class="mobile-container d-md-none d-block ">
+
+{/* <!-- Top Navigation Menu --> */}
+<div className="topnav d-flex justify-content-between align-items-center px-3 pt-4">
+<img src={img1} alt="logo"/>
+
+  {
+    condition?<i className="fa-solid fa-xmark"onClick={()=>{setCondition(false)}}></i> : <i className="fa fa-bars"onClick={()=>{setCondition(true)}}></i>
+  }
+   
+</div>
+<div className={`${condition ? 'd-block' : 'd-none'} bg-white text-black mx-3 my-4`} style={{ overflowX: 'hidden', overflowY: 'scroll', maxHeight: '300px' }}>
+   
+    <ul>
+        <li><Link to="/"className='d-block p-2 border border-1 d-flex justify-content-between align-items-center'>Home {home?<i class="fa-solid fa-minus"onClick={()=>{setHome(false)}}></i> :<i className="fa-solid fa-plus"onClick={()=>{setHome(true)}}></i>} </Link>
+        <ul className={`${home?"d-block":"d-none"}`}>
+        <li><Link to="/"className='d-block p-2 border border-1 px-4' >Home</Link></li>        
+        <li><Link to="/Home2"className='d-block p-2 border border-1 px-4' >Home 2</Link></li>        
+       </ul>
+        </li>
+        <li><Link to="/About"className='d-block p-2 border border-1' >About</Link></li>
+        <li><Link to="/Event"className='d-block p-2 border border-1 d-flex justify-content-between align-items-center'>Events {event?<i class="fa-solid fa-minus"onClick={()=>{setEvents(false)}}></i> :<i className="fa-solid fa-plus"onClick={()=>{setEvents(true)}}></i>}</Link>
+        <ul className={`${event?"d-block":"d-none"}`}>
+
+        <li><Link to="/Event"className='d-block p-2 border border-1 px-4' >Events</Link></li>        
+        <li><Link to="/Event_details"className='d-block p-2 border border-1 px-4' >Events details</Link></li>        
+       </ul>
+        </li>        
+        <li><Link to="/portfolio"className='d-block p-2 border border-1 d-flex justify-content-between align-items-center'>Portfolio {portfolio?<i class="fa-solid fa-minus"onClick={()=>{setPortfolio(false)}}></i> :<i className="fa-solid fa-plus"onClick={()=>{setPortfolio(true)}}></i>}</Link>
+        <ul className={`${portfolio?"d-block":"d-none"}`}>
+        <li><Link to="/portfolio"className='d-block p-2 border border-1 px-4' >Portfolio</Link></li>        
+        <li><Link to="/portfolio2"className='d-block p-2 border border-1 px-4' >Portfolio v2</Link></li>   
+        <li><Link to="/portfolio_details"className='d-block p-2 border border-1 px-4' >Portfolio Details</Link></li>   
+
+       </ul>
+        </li>         
+        <li><Link to="/"className='d-block p-2 border border-1 d-flex justify-content-between align-items-center'>Pages {page?<i class="fa-solid fa-minus"onClick={()=>{setPage(false)}}></i> :<i className="fa-solid fa-plus"onClick={()=>{setPage(true)}}></i>}</Link>
+        <ul className={`${page?"d-block":"d-none"}`}>
+        <li><Link to="/gallery"className='d-block p-2 border border-1 px-4' >Gallery</Link></li>        
+        <li><Link to="/services"className='d-block p-2 border border-1 px-4' >Service</Link></li> 
+        <li><Link to="/services_details"className='d-block p-2 border border-1 px-4' >Service details</Link></li>        
+        <li><Link to="/Team"className='d-block p-2 border border-1 px-4' >Team</Link></li>  
+        <li><Link to="/team_details"className='d-block p-2 border border-1 px-4' >Team details</Link></li>  
+        <li><Link to="/Faq"className='d-block p-2 border border-1 px-4' >Faq</Link></li>  
+        <li><Link to="/login"className='d-block p-2 border border-1 px-4' >Login & Registration</Link></li>   
+        <li><Link to="/error"className='d-block p-2 border border-1 px-4' >Error</Link></li>        
+     </ul>
+        </li>
+        <li><Link to="/news"className='d-block p-2 border border-1 d-flex justify-content-between align-items-center'>News{news?<i class="fa-solid fa-minus"onClick={()=>{setNews(false)}}></i> :<i className="fa-solid fa-plus"onClick={()=>{setNews(true)}}></i>}</Link>
+        <ul className={`${news?"d-block":"d-none"}`}>
+        <li><Link to="/news"className='d-block p-2 border border-1 px-4' >News</Link></li>        
+        <li><Link to="/news_list"className='d-block p-2 border border-1 px-4' >News List</Link></li>    
+        <li><Link to="/news_details"className='d-block p-2 border border-1 px-4' >News details</Link></li>    
+
+       </ul>
+        </li>
+        <li><Link to="/contact"className='d-block p-2 border border-1 ' >Contact</Link></li>        
+
+    </ul>
+    
+  </div>
+
+</div>
 
         </div>
     );

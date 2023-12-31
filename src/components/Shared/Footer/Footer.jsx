@@ -13,6 +13,7 @@ import "../../../assets/css/magnific-popup.min.css";
 import "../../../assets/css/meanmenu.css";
 import "../../../assets/css/style.css"
 import '../../../assets/css/responsive.css'
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
@@ -44,12 +45,12 @@ const Footer = () => {
                                 <h3><span className="section-after">Conference</span></h3>
                                 <div className="nav-item-footer">
                                     <ul>
-                                        <li><a href="about.html">About us</a></li>
-                                        <li><a href="news.html">Community blog</a></li>
-                                        <li><a href="event.html">Rewards</a></li>
-                                        <li><a href="contact.html">Work with us</a></li>
-                                        <li><a href="team.html">Meet the team</a></li>
-                                        <li><a href="news.html">Blog</a></li>
+                                        <li><Link to="/About">About us</Link></li>
+                                        <li><Link to="/news">Community blog</Link></li>
+                                        <li><Link to="/Event">Rewards</Link></li>
+                                        <li><Link to="/contact">Work with us</Link></li>
+                                        <li><Link to="/Team">Meet the team</Link></li>
+                                        <li><Link to="/news">Blog</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -59,11 +60,11 @@ const Footer = () => {
                                 <h3><span className="section-after">Support</span></h3>
                                 <div className="nav-item-footer">
                                     <ul>
-                                        <li><a href="login.html">Account</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="service.html">Legal</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="event.html">Affiliate program</a></li>
+                                        <li><Link to="/login">Account</Link></li>
+                                        <li><Link to="/Faq">Faq</Link></li>
+                                        <li><Link to="/services">Legal</Link></li>
+                                        <li><Link to="/contact">Contact</Link></li>
+                                        <li><Link to="/Event">Affiliate program</Link></li>
                                         <li><a href="#!">Privacy Policy</a></li>
                                     </ul>
                                 </div>
@@ -74,12 +75,12 @@ const Footer = () => {
                                 <h3><span className="section-after">Other Servicest</span></h3>
                                 <div className="nav-item-footer">
                                     <ul>
-                                        <li><a href="event.html">Community program</a></li>
-                                        <li><a href="event.html">Investor relations</a></li>
-                                        <li><a href="event.html">Rewards program</a></li>
+                                        <li><Link to="/Event">Community program</Link></li>
+                                        <li><Link to="/Event">Investor relations</Link></li>
+                                        <li><Link to="/Event">Rewards program</Link></li>
                                         <li><a href="#!">Points</a></li>
-                                        <li><a href="team.html">Partners</a></li>
-                                        <li><a href="news-list.html">List of conference</a></li>
+                                        <li><Link to="/Team">Partners</Link></li>
+                                        <li><Link to="/news_details">List of conference</Link></li>
                                     </ul>
                                 </div>
                             </div>
